@@ -1,0 +1,9 @@
+Diagnóstico CLI e Ambiente — versão em VERSION
+ChatGPT/Codex: invocar diagnosticar-cli; Claude Code: /diagnosticar-cli.
+Enviar o erro e o comando; informar o terminal quando não estiver claro.
+Modo padrão: causa, próximo comando e resultado esperado. Pedir “explique” para aprofundar.
+Instalador Claude: executar com Python 3 no ambiente onde o Claude Code roda.
+Destino padrão: ~/.claude/skills/diagnosticar-cli. Sem rede e sem dependências externas.
+Se já existir, o instalador para sem sobrescrever. Abrir nova sessão e invocar /diagnosticar-cli.
+Windows, WSL e Ubuntu no Termux têm homes distintas; instalar no ambiente utilizado.
+Referência oficial: https://code.claude.com/docs/en/skills
