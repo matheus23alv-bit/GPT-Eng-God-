@@ -1,5 +1,12 @@
 # Changelog · GPT-Eng-God
 
+## [Não lançado]
+
+### Adicionado
+
+- `AGENTS.md` com guia para agentes e
+  `CLAUDE.md` importando o mesmo arquivo.
+
 ## [1.0.0] - 2026-10-15
 
 ### Adicionado
