@@ -1,0 +1,87 @@
+GPT-Eng-God · v1.0.0
+ENG GOD 12 como GPT personalizado (ChatGPT)
+com roteador e módulos de conhecimento.
+
+ESTRUTURA
+
+src/instrucoes/ENG-GOD-instrucoes.md
+  ➜ Arquivo único para o campo
+    "Instruções" do GPT. Contém
+    identidade, precedência, roteador,
+    resumo de orquestração e regras do
+    operador.
+
+src/conhecimento/
+  00-roteador.md        rotas, desempate,
+                        exemplos, handoff
+  01-orquestracao.md    fases internas e
+                        orquestração de IA
+  02-eng-god-12.0.1.md  método ENG GOD 12
+                        (canônico)
+  10-pvn-audit.md       auditoria de código
+                        (v0.2.0, ChatGPT)
+  11-pvn-release.md     fechamento de versão
+                        (v0.2.0, ChatGPT)
+  20-perfil-operador.md comunicação, escopo,
+                        qualidade, entrega
+  ➜ Enviar todos como "Conhecimento" do
+    GPT.
+
+src/VERSION        única fonte da versão
+src/Changelog.md   histórico
+
+INSTALAÇÃO NO GPT
+
+1. Criar ou abrir o GPT em
+   chatgpt.com ➜ Explorar GPTs ➜ Criar.
+2. Nome: ENG GOD 12.
+3. Instruções: colar o conteúdo integral
+   de src/instrucoes/ENG-GOD-instrucoes.md.
+4. Conhecimento: enviar os 6 arquivos de
+   src/conhecimento/.
+5. Capacidades: manter só as necessárias.
+   Nenhuma é exigida pelos módulos.
+6. Salvar.
+
+COMO TESTAR
+
+1. Enviar "EG12" sozinho. Esperado: cartão
+   e menu, sem tarefa executada.
+2. Enviar "melhora esse prompt" com um
+   prompt colado. Esperado: prompt
+   melhorado em bloco de código, sem
+   executar a tarefa do prompt.
+3. Enviar um arquivo JS com bug conhecido e
+   "audita". Esperado: bug como PROBLEMA
+   REAL, nenhuma edição, estado e
+   resultado marcados.
+4. Enviar "fecha a versão" num projeto
+   pequeno. Esperado: plano com um único
+   OK antes de editar.
+5. Enviar "audita, corrige e fecha". Esperado:
+   só a auditoria, com handoff
+   "Fase concluída ➜ próxima".
+
+LIMITES CONHECIDOS
+
+➜ O campo Instruções do GPT aceita até
+  8000 caracteres. O arquivo atual está
+  dentro do limite; conferir ao editar.
+➜ Módulos de conhecimento são consultados
+  por busca; o GPT pode não ler um módulo
+  inteiro. O roteador nas instruções
+  cobre o essencial de cada rota.
+➜ OCR, análise documental e organização de
+  arquivos não têm módulo dedicado;
+  rodam como TASK pelo método ENG GOD.
+➜ Regra Drive só vale com conector ativo.
+
+ORIGEM DOS MÓDULOS
+
+02: ENG_GOD_12.0.1.md enviado pelo operador
+    (12.0.0 não incluído: duplicado).
+10 e 11: pvn-skills-v0.2.0.zip
+    (Drive ➜ Skills - Agents), variante
+    ChatGPT. Linha "Status" alterada de
+    PROPOSTA para ATIVO.
+00, 01, 20: criados nesta versão.
